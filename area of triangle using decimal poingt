@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main()
+{
+  float b,h,area;
+  scanf("%f,%f",&a,&b);
+  area=(1/2.0)*b*h;
+  print("area of triangle=%2f",area);
+  return 0;
+}

@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int n, count = 0;
+    int a = 0, b = 1, c;
+    int sum = 0;
+
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    while (count < n)
+    {
+        if (a % 2 == 0) {
+            sum = sum + a;
+            count++;
+        }
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    printf("Sum of first %d even Fibonacci numbers = %d", n, sum);
+    return 0;
+}
